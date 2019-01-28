@@ -38,14 +38,13 @@ class Chat extends Component {
 
     const { socket } = this.state;
     const msgs = [...this.state.msgs];
-
     socket.emit("chat", {
       msg: e.target.chatbox.value,
       username: this.state.username
     });
 
     socket.on("chat", data => {
-      msgs.push(data);
+      msgs.unshift(data);
       this.setState({ msgs });
     });
 
