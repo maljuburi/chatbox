@@ -36,7 +36,7 @@
     }
     
   </style>
-  <text x="5" y="20">TYPING</text>
+  <text x="5" y="20">Typing</text>
   <circle class="c1" cx="60" cy="15" r="3" />
   <circle class="c2" cx="70" cy="15" r="3" />
   <circle class="c3" cx="80" cy="15" r="3" />

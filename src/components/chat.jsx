@@ -74,14 +74,16 @@ class Chat extends Component {
             <h3 className="text-muted text-center">CHAT BOX</h3>
             <hr />
             <h6>Welcome {this.state.username}</h6>
-            {this.state.typing.isActive && (
-              <div>
-                <small className="text-muted">
-                  {this.state.typing.username + " is"}
-                </small>
-                <img src={typingSVG} alt="typing" />
-              </div>
-            )}
+            <div style={{ height: "25px" }}>
+              {this.state.typing.isActive && (
+                <div>
+                  <small className="text-muted">
+                    {this.state.typing.username + " is"}
+                  </small>
+                  <img src={typingSVG} alt="typing" />
+                </div>
+              )}
+            </div>
             {this.state.err && (
               <div className="alert alert-danger">
                 <small>Box is empty!</small>
